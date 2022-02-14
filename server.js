@@ -6,7 +6,6 @@ var app = express();
 const router = express.Router();
 const crypto = require('crypto');
 const md5 = require('md5');
-
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
 app.use(
@@ -14,14 +13,7 @@ app.use(
   router.get("/", async function (req, res, next) {
     let id = req.query.id;
 
-    // mailchimp.setConfig({
-    //   apiKey: "dab7cc379e6cc8160077141731f3ccd1-us10",
-    //   server: "us10",
-    // });
-    mailchimp.setConfig({
-        apiKey: "dab7cc379e6cc8160077141731f3ccd1-us10",
-        server: "us10",
-      });
+    
     let response;
     
     
