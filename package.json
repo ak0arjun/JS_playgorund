@@ -13,7 +13,9 @@
     "body-parser": "^1.19.1",
     "crypto": "^1.0.1",
     "express": "^4.17.2",
-    "md5": "^2.3.0"
+    "md5": "^2.3.0",
+    "nanoid": "^3.3.3",
+    "node-html-to-image": "^3.2.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
