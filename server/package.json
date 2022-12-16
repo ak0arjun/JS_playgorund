@@ -4,18 +4,21 @@
   "description": "Algorithm practice in JS",
   "main": "server.js",
   "scripts": {
-    "test": "npx run mocha --exit"
+    "test": "npx run mocha --exit",
+    "gql_server": "nodemon gqlServer.js",
+    "js_server": "nodemon server.js"
   },
   "author": "Arjun",
   "license": "ISC",
   "dependencies": {
-    "@mailchimp/mailchimp_marketing": "^3.0.74",
     "body-parser": "^1.19.1",
     "crypto": "^1.0.1",
-    "express": "^4.17.2",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0",
+    "graphql-tools": "^8.3.6",
     "md5": "^2.3.0",
-    "nanoid": "^3.3.3",
-    "node-html-to-image": "^3.2.4"
+    "nanoid": "^3.3.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
